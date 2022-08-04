@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="nav-container">
+        <a class="logo">Fat<span class="logo__accent">( )</span>Code</a>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">Главная</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Курсы</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Бесплатные уроки</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="#">Блог</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
+          </ul>
+        </nav>
+
+        <div class="help">
+          <a class="help__btn" href="#">Помощь</a>
+        </div>
+
+        <div class="user">
+          <a class="user__btn" href="#"
+            ><img src="./images/profile@1x.jpg" alt="account"
+          /></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="sidebar">
+        <ul class="sidebar__list">
+          <li class="sidebar__item">
+            <svg class="sidebar__icon" width="38" height="38">
+              <use href="./images/icons/main_icons.svg#profile_icon"></use>
+            </svg>
+            <a href="#">Профиль</a>
+          </li>
+          <li class="sidebar__item">
+            <svg class="sidebar__icon" width="36" height="40">
+              <use href="./images/icons/main_icons.svg#pet_icon"></use>
+            </svg>
+            <a href="#">Мой питомец</a>
+          </li>
+          <li class="sidebar__item">
+            <svg class="sidebar__icon" width="40" height="40">
+              <use href="./images/icons/main_icons.svg#my-courses_icon"></use>
+            </svg>
+            <a href="#">Мои курсы</a>
+          </li>
+          <li class="sidebar__item">
+            <svg class="sidebar__icon" width="40" height="33">
+              <use href="./images/icons/main_icons.svg#my-mentors_icon"></use>
+            </svg>
+            <a href="#">Мои ментора</a>
+          </li>
+          <li class="sidebar__item">
+            <svg class="sidebar__icon" width="40" height="30">
+              <use href="./images/icons/main_icons.svg#my-donates_icon"></use>
+            </svg>
+            <a href="#">Мои донаты</a>
+          </li>
+          <li class="sidebar__item">
+            <svg class="sidebar__icon" width="40" height="40">
+              <use href="./images/icons/main_icons.svg#my-notes_icon"></use>
+            </svg>
+            <a href="#">Мои заметки</a>
+          </li>
+          <li class="sidebar__item">
+            <svg class="sidebar__icon" width="40" height="40">
+              <use href="./images/icons/main_icons.svg#qa_icon"></use>
+            </svg>
+            <a href="#">Вопрос-ответ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="profile">
+        <div class="profile__info">
+          <h2>Профиль</h2>
+          <button type="button">Редактировать</button>
+          <form>
+            <label for="">Логин<input type="text" /></label>
+            <label for="">E-mail<input type="email" /></label>
+            <label for="">Имя<input type="text" /></label>
+            <label for="">Фамилия<input type="text" /></label>
+            <label for="">Отчество<input type="text" /></label>
+            <label for="">Linkedin<input type="text" /></label>
+            <label for="">YouTube<input type="text" /></label>
+            <label for="">VK<input type="text" /></label>
+          </form>
+          <button type="button">Удалить профиль</button>
+        </div>
+        <div class="profile__avatar">
+          <div class="profile__image">
+            <img src="./images/profile@1x.jpg" alt="avatar" class="avatar" />
+            <button type="button">Сменить аватарку</button>
+          </div>
+          <div class="profile__image-modal visually-hidden">
+            Модалка для смены аватара (какая-то либа должна быть)
+          </div>
+          <div class="profile__media">
+            <button type="button">Добавить социальную сеть</button>
+          </div>
+        </div>
+        <button type="button">Сменить пароль</button>
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="footer__text">&copy; @Fat( )Code 2022</p>
+    </footer>
+  </body>
+  <script src="./index.js"></script>
+</html>
