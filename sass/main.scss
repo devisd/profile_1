@@ -1,0 +1,12 @@
+// Импорт стилей-утилит
+@import "./utils/variables";
+@import "./utils/vis-hidden";
+
+// Импорт базовый стилей
+@import "./base/base-style";
+
+// Импорт стилей для компонентов страницы
+@import "./components/header";
+@import "./components/nav";
+@import "./components/sidebar";
+@import "./components/container";
