@@ -42,8 +42,8 @@ p {
 body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
-  color: #1C1D1E;
-  background-color: #FFFFFF;
+  color: #1c1d1e;
+  background-color: #ffffff;
 }
 
 body.modal-open {
@@ -73,4 +73,30 @@ body.modal-open {
   .container {
     width: 1920px;
   }
+}
+
+.fatcat {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.fatcat__text {
+  opacity: 0;
+  width: 150px;
+}
+.fatcat:hover .fatcat__text {
+  opacity: 1;
+}
+
+.fatcat__img {
+  width: 180px;
 }/*# sourceMappingURL=main.css.map */

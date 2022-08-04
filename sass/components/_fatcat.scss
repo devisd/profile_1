@@ -1,0 +1,19 @@
+.fatcat {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.fatcat__text {
+  opacity: 0;
+  width: 150px;
+
+  .fatcat:hover & {
+    opacity: 1;
+  }
+}
+
+.fatcat__img {
+  width: 180px;
+}
