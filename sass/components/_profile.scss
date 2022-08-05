@@ -1,0 +1,38 @@
+.profile {
+  display: flex;
+  padding-top: 64px;
+  margin-left: 64px;
+}
+
+.profile__title {
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0.96;
+}
+
+.profile__edit-btn {
+  display: flex;
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.67;
+  color: #bbc0cb;
+  border: none;
+  background: transparent;
+}
+
+.profile__edit-icon {
+  margin-left: 12px;
+  stroke: #bbc0cb;
+}
+
+.profile__edit-pass-btn {
+  background: transparent;
+  border: none;
+}
+
+.profile__delete-btn {
+  background: transparent;
+  border: none;
+}

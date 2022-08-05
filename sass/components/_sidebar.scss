@@ -1,4 +1,43 @@
 // Стили для сайдбара
+.sidebar {
+  background: $accent-color;
+  width: 376px;
+  padding: 109px 0px 36px 28px;
+  height: 652px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.sidebar__item {
+  width: 100%;
+}
+
+.sidebar__item:not(:last-child) {
+  margin-bottom: 39px;
+}
+
+.sidebar__link {
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 0.1.25;
+  color: $sidebar-text-color;
+  // padding: 26px 0 14px 83px;
+}
+
 .sidebar__icon {
+  fill: #ffffff;
+  stroke: #ffffff;
   background-color: $accent-color;
+  margin-right: 18px;
+}
+
+.sidebar__item:hover .sidebar__link,
+.sidebar__item:focus .sidebar__link,
+.sidebar__item:hover .sidebar__icon,
+.sidebar__item:focus .sidebar__icon {
+  color: $accent-color;
+  fill: $accent-color;
+  stroke: $accent-color;
+  background-color: #ffffff;
 }

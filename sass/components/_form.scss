@@ -1,0 +1,33 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 39px;
+}
+
+.form label {
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.form input {
+  margin: 19px 0 0 20px;
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.25;
+  border: none;
+}
+
+.form input:not(:last-child) {
+  margin-bottom: 33px;
+}
+
+.form input::placeholder {
+  font-family: $secondary-font;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #1c1d1e;
+}

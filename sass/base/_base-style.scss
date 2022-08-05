@@ -40,21 +40,21 @@ body.modal-open {
 // глобальные стили для контейнера
 .container {
   margin: 0 auto;
-  padding: 13px 39px;
+  padding: 15px 40px;
 
-  @media screen and (min-width: 320px) {
-    width: 320px;
-  }
+  // @media screen and (min-width: 320px) {
+  //   width: 320px;
+  // }
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   width: 768px;
+  // }
 
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   width: 1200px;
+  // }
 
-  @media screen and (min-width: 1920px) {
-    width: 1920px;
-  }
+  // @media screen and (min-width: 1920px) {
+  //   width: 1920px;
+  // }
 }

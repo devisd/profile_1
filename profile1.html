@@ -5,12 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Raleway:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -38,81 +33,118 @@
           </ul>
         </nav>
 
-        <div class="help">
-          <a class="help__btn" href="#">Помощь</a>
+        <div class="help" href="#">
+          <svg class="help__icon" width="40" height="43">
+            <use href="./images/icons/main_icons.svg#edit_icon"></use>
+          </svg>
+          <a class="help__btn">Помощь</a>
         </div>
 
         <div class="user">
-          <a class="user__btn" href="#"
-            ><img src="./images/profile@1x.jpg" alt="account"
-          /></a>
+          <a class="user__btn" href="#">
+            <img
+              class="user__img"
+              src="./images/profile@1x.jpg"
+              alt="account"
+            />
+          </a>
         </div>
       </div>
     </header>
 
-    <main>
+    <main class="main">
       <div class="sidebar">
         <ul class="sidebar__list">
           <li class="sidebar__item">
             <svg class="sidebar__icon" width="38" height="38">
               <use href="./images/icons/main_icons.svg#profile_icon"></use>
             </svg>
-            <a href="#">Профиль</a>
+            <a href="#" class="sidebar__link">Профиль</a>
           </li>
           <li class="sidebar__item">
             <svg class="sidebar__icon" width="36" height="40">
               <use href="./images/icons/main_icons.svg#pet_icon"></use>
             </svg>
-            <a href="#">Мой питомец</a>
+            <a href="#" class="sidebar__link">Мой питомец</a>
           </li>
           <li class="sidebar__item">
             <svg class="sidebar__icon" width="40" height="40">
               <use href="./images/icons/main_icons.svg#my-courses_icon"></use>
             </svg>
-            <a href="#">Мои курсы</a>
+            <a href="#" class="sidebar__link">Мои курсы</a>
           </li>
           <li class="sidebar__item">
             <svg class="sidebar__icon" width="40" height="33">
               <use href="./images/icons/main_icons.svg#my-mentors_icon"></use>
             </svg>
-            <a href="#">Мои ментора</a>
+            <a href="#" class="sidebar__link">Мои ментора</a>
           </li>
           <li class="sidebar__item">
             <svg class="sidebar__icon" width="40" height="30">
               <use href="./images/icons/main_icons.svg#my-donates_icon"></use>
             </svg>
-            <a href="#">Мои донаты</a>
+            <a href="#" class="sidebar__link">Мои донаты</a>
           </li>
           <li class="sidebar__item">
             <svg class="sidebar__icon" width="40" height="40">
               <use href="./images/icons/main_icons.svg#my-notes_icon"></use>
             </svg>
-            <a href="#">Мои заметки</a>
+            <a href="#" class="sidebar__link">Мои заметки</a>
           </li>
           <li class="sidebar__item">
-            <svg class="sidebar__icon" width="40" height="40">
-              <use href="./images/icons/main_icons.svg#qa_icon"></use>
-            </svg>
-            <a href="#">Вопрос-ответ</a>
+            <a href="#" class="sidebar__link">
+              <svg class="sidebar__icon" width="40" height="40">
+                <use href="./images/icons/main_icons.svg#qa_icon"></use>
+              </svg>
+              Вопрос-ответ</a
+            >
           </li>
         </ul>
       </div>
       <div class="profile">
-        <div class="profile__info">
+        <div class="profile__title">
           <h2>Профиль</h2>
-          <button type="button">Редактировать</button>
-          <form>
-            <label for="">Логин<input type="text" /></label>
-            <label for="">E-mail<input type="email" /></label>
-            <label for="">Имя<input type="text" /></label>
-            <label for="">Фамилия<input type="text" /></label>
-            <label for="">Отчество<input type="text" /></label>
-            <label for="">Linkedin<input type="text" /></label>
-            <label for="">YouTube<input type="text" /></label>
-            <label for="">VK<input type="text" /></label>
+
+          <form class="form">
+            <label for="login">Логин</label>
+            <input type="text" id="login" placeholder="Ватрушка" />
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="vatrushka_pushka@gmail.com"
+            />
+            <label for="first-name">Имя</label>
+            <input type="text" id="first-name" placeholder="Екатерина" />
+            <label for="last-name">Фамилия</label>
+            <input type="text" id="last-name" placeholder="Иванова" />
+            <label for="second-name">Отчество</label>
+            <input type="text" id="second-name" placeholder="Гульнаровна" />
+            <label for="linkedin">Linkedin</label>
+            <input
+              type="text"
+              id="linkedin"
+              placeholder="https://www.linkedin.com"
+            />
+            <label for="youtube">YouTube</label>
+            <input
+              type="text"
+              id="youtube"
+              placeholder="https://www.youtube.com"
+            />
+            <label for="vk">VK</label>
+            <input type="text" id="vk" placeholder="https://vk.com" />
           </form>
-          <button type="button">Удалить профиль</button>
+          <button class="profile__delete-btn" type="button">
+            Удалить профиль
+          </button>
         </div>
+        <button class="profile__edit-btn" type="button">
+          Редактировать
+          <svg class="profile__edit-icon" width="30" height="30">
+            <use href="./images/icons/main_icons.svg#edit_icon"></use>
+          </svg>
+        </button>
         <div class="profile__avatar">
           <div class="profile__image">
             <img src="./images/profile@1x.jpg" alt="avatar" class="avatar" />
@@ -124,8 +156,10 @@
           <div class="profile__media">
             <button type="button">Добавить социальную сеть</button>
           </div>
+          <button class="profile__edit-pass-btn" type="button">
+            Сменить пароль
+          </button>
         </div>
-        <button type="button">Сменить пароль</button>
       </div>
     </main>
     <footer class="footer">
