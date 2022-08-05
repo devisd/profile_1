@@ -198,6 +198,7 @@ body.modal-open {
 
 .sidebar__item {
   width: 100%;
+  cursor: pointer;
 }
 
 .sidebar__item:not(:last-child) {
