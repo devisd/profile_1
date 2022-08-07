@@ -1,0 +1,34 @@
+.profile__avatar {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-bottom: 150px;
+}
+
+.profile__image {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  margin-bottom: 29px;
+}
+
+.profile__avatar button {
+  display: flex;
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.67;
+  color: #bbc0cb;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.profile__avatar button:hover,
+.profile__avatar button:focus,
+.profile__avatar button:hover .profile__edit-icon,
+.profile__avatar button:focus .profile__edit-icon {
+  color: $accent-color;
+  stroke: $accent-color;
+  fill: transparent;
+}

@@ -11,20 +11,39 @@
   line-height: 1.25;
 }
 
-.form input {
-  margin: 19px 0 0 20px;
+.form__input {
+  width: 634px;
+  height: 55px;
+  margin-top: 19px;
+  padding-left: 22px;
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.25;
+  background: #f3f3f3;
+  border-radius: 5px;
   border: none;
 }
 
-.form input:not(:last-child) {
+.form__input.web {
+  width: 919px;
+  height: 55px;
+  margin-top: 19px;
+  padding-left: 22px;
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.25;
+  background: transparent;
+  border: 3px solid #f3f3f3;
+  border-radius: 5px;
+}
+
+.form__input:not(:last-child) {
   margin-bottom: 33px;
 }
 
-.form input::placeholder {
+.form__input::placeholder {
   font-family: $secondary-font;
   font-style: normal;
   font-size: 24px;

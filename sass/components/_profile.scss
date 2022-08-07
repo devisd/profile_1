@@ -4,7 +4,7 @@
   margin-left: 64px;
 }
 
-.profile__title {
+.profile__container {
   font-family: $primary-font;
   font-weight: 700;
   font-size: 36px;
@@ -13,6 +13,7 @@
 
 .profile__edit-btn {
   display: flex;
+  margin-left: 455px;
   font-family: $primary-font;
   font-weight: 700;
   font-size: 18px;
@@ -20,19 +21,68 @@
   color: #bbc0cb;
   border: none;
   background: transparent;
+  cursor: pointer;
 }
 
 .profile__edit-icon {
   margin-left: 12px;
   stroke: #bbc0cb;
+  fill: #bbc0cb;
+}
+
+.profile__media {
+  margin: 27px 0 42px 580px;
+}
+
+.profile__media-btn {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.25;
+  text-decoration-line: underline;
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .profile__edit-pass-btn {
-  background: transparent;
+  display: flex;
+  margin: 0 0 33px 735px;
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.67;
+  color: #bbc0cb;
   border: none;
+  background: transparent;
+  cursor: pointer;
 }
 
 .profile__delete-btn {
-  background: transparent;
+  display: flex;
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.67;
+  color: #bbc0cb;
   border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.profile__edit-btn:hover,
+.profile__edit-btn:focus,
+.profile__edit-pass-btn:hover,
+.profile__edit-pass-btn:focus,
+.profile__delete-btn:hover,
+.profile__delete-btn:focus,
+.profile__edit-btn:hover .profile__edit-icon,
+.profile__edit-btn:focus .profile__edit-icon,
+.profile__delete-btn:hover .profile__edit-icon,
+.profile__delete-btn:focus .profile__edit-icon,
+.profile__edit-pass-btn:hover .profile__edit-icon,
+.profile__edit-pass-btn:focus .profile__edit-icon {
+  color: $accent-color;
+  stroke: $accent-color;
+  fill: transparent;
 }

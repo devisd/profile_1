@@ -154,6 +154,7 @@ body.modal-open {
 
 .help__icon {
   stroke: #69cb2d;
+  fill: transparent;
   margin-right: 14px;
 }
 
@@ -190,19 +191,23 @@ body.modal-open {
 .sidebar {
   background: #69cb2d;
   width: 376px;
-  padding: 109px 0px 36px 28px;
+  padding: 109px 0px 36px;
   height: 652px;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
 }
 
 .sidebar__item {
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 376px;
+  height: 78px;
+  padding-left: 28px;
   cursor: pointer;
-}
-
-.sidebar__item:not(:last-child) {
-  margin-bottom: 39px;
 }
 
 .sidebar__link {
@@ -220,6 +225,8 @@ body.modal-open {
   margin-right: 18px;
 }
 
+.sidebar__item:hover,
+.sidebar__item:focus,
 .sidebar__item:hover .sidebar__link,
 .sidebar__item:focus .sidebar__link,
 .sidebar__item:hover .sidebar__icon,
@@ -238,7 +245,7 @@ body.modal-open {
   margin-left: 64px;
 }
 
-.profile__title {
+.profile__container {
   font-family: Montserrat, sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -249,6 +256,7 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 455px;
   font-family: Montserrat, sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -256,21 +264,75 @@ body.modal-open {
   color: #bbc0cb;
   border: none;
   background: transparent;
+  cursor: pointer;
 }
 
 .profile__edit-icon {
   margin-left: 12px;
   stroke: #bbc0cb;
+  fill: #bbc0cb;
+}
+
+.profile__media {
+  margin: 27px 0 42px 580px;
+}
+
+.profile__media-btn {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.25;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .profile__edit-pass-btn {
-  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 33px 735px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.67;
+  color: #bbc0cb;
   border: none;
+  background: transparent;
+  cursor: pointer;
 }
 
 .profile__delete-btn {
-  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.67;
+  color: #bbc0cb;
   border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.profile__edit-btn:hover,
+.profile__edit-btn:focus,
+.profile__edit-pass-btn:hover,
+.profile__edit-pass-btn:focus,
+.profile__delete-btn:hover,
+.profile__delete-btn:focus,
+.profile__edit-btn:hover .profile__edit-icon,
+.profile__edit-btn:focus .profile__edit-icon,
+.profile__delete-btn:hover .profile__edit-icon,
+.profile__delete-btn:focus .profile__edit-icon,
+.profile__edit-pass-btn:hover .profile__edit-icon,
+.profile__edit-pass-btn:focus .profile__edit-icon {
+  color: #69cb2d;
+  stroke: #69cb2d;
+  fill: transparent;
 }
 
 .form {
@@ -291,20 +353,39 @@ body.modal-open {
   line-height: 1.25;
 }
 
-.form input {
-  margin: 19px 0 0 20px;
+.form__input {
+  width: 634px;
+  height: 55px;
+  margin-top: 19px;
+  padding-left: 22px;
   font-family: Bowlby One, sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.25;
+  background: #f3f3f3;
+  border-radius: 5px;
   border: none;
 }
 
-.form input:not(:last-child) {
+.form__input.web {
+  width: 919px;
+  height: 55px;
+  margin-top: 19px;
+  padding-left: 22px;
+  font-family: Bowlby One, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.25;
+  background: transparent;
+  border: 3px solid #f3f3f3;
+  border-radius: 5px;
+}
+
+.form__input:not(:last-child) {
   margin-bottom: 33px;
 }
 
-.form input::-webkit-input-placeholder {
+.form__input::-webkit-input-placeholder {
   font-family: Bowlby One, sans-serif;
   font-style: normal;
   font-size: 24px;
@@ -312,7 +393,7 @@ body.modal-open {
   color: #1c1d1e;
 }
 
-.form input::-moz-placeholder {
+.form__input::-moz-placeholder {
   font-family: Bowlby One, sans-serif;
   font-style: normal;
   font-size: 24px;
@@ -320,7 +401,7 @@ body.modal-open {
   color: #1c1d1e;
 }
 
-.form input:-ms-input-placeholder {
+.form__input:-ms-input-placeholder {
   font-family: Bowlby One, sans-serif;
   font-style: normal;
   font-size: 24px;
@@ -328,7 +409,7 @@ body.modal-open {
   color: #1c1d1e;
 }
 
-.form input::-ms-input-placeholder {
+.form__input::-ms-input-placeholder {
   font-family: Bowlby One, sans-serif;
   font-style: normal;
   font-size: 24px;
@@ -336,12 +417,54 @@ body.modal-open {
   color: #1c1d1e;
 }
 
-.form input::placeholder {
+.form__input::placeholder {
   font-family: Bowlby One, sans-serif;
   font-style: normal;
   font-size: 24px;
   line-height: 1.25;
   color: #1c1d1e;
+}
+
+.profile__avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 50px;
+  margin-bottom: 150px;
+}
+
+.profile__image {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  margin-bottom: 29px;
+}
+
+.profile__avatar button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.67;
+  color: #bbc0cb;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.profile__avatar button:hover,
+.profile__avatar button:focus,
+.profile__avatar button:hover .profile__edit-icon,
+.profile__avatar button:focus .profile__edit-icon {
+  color: #69cb2d;
+  stroke: #69cb2d;
+  fill: transparent;
 }
 
 .fatcat {

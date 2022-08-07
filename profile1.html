@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Document</title>
 
     <link
@@ -19,23 +22,37 @@
   <body>
     <header class="header">
       <div class="nav-container">
-        <a class="logo">Fat<span class="logo__accent">( )</span>Code</a>
+        <a class="logo"
+          >Fat<span class="logo__accent">( )</span>Code</a
+        >
 
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" href="#">Главная</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Курсы</a></li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Бесплатные уроки</a>
+              <a class="nav__link" href="#">Главная</a>
             </li>
-            <li class="nav__item"><a class="nav__link" href="#">Блог</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Курсы</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#"
+                >Бесплатные уроки</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Блог</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">О нас</a>
+            </li>
           </ul>
         </nav>
 
         <div class="help" href="#">
           <svg class="help__icon" width="40" height="43">
-            <use href="./images/icons/main_icons.svg#edit_icon"></use>
+            <use
+              href="./images/icons/main_icons.svg#edit_icon"
+            ></use>
           </svg>
           <a class="help__btn">Помощь</a>
         </div>
@@ -56,109 +73,231 @@
       <div class="sidebar">
         <ul class="sidebar__list">
           <li class="sidebar__item">
-            <svg class="sidebar__icon" width="38" height="38">
-              <use href="./images/icons/main_icons.svg#profile_icon"></use>
+            <svg
+              class="sidebar__icon"
+              width="38"
+              height="38"
+            >
+              <use
+                href="./images/icons/main_icons.svg#profile_icon"
+              ></use>
             </svg>
             <a href="#" class="sidebar__link">Профиль</a>
           </li>
           <li class="sidebar__item">
-            <svg class="sidebar__icon" width="36" height="40">
-              <use href="./images/icons/main_icons.svg#pet_icon"></use>
+            <svg
+              class="sidebar__icon"
+              width="36"
+              height="40"
+            >
+              <use
+                href="./images/icons/main_icons.svg#pet_icon"
+              ></use>
             </svg>
-            <a href="#" class="sidebar__link">Мой питомец</a>
+            <a href="#" class="sidebar__link"
+              >Мой питомец</a
+            >
           </li>
           <li class="sidebar__item">
-            <svg class="sidebar__icon" width="40" height="40">
-              <use href="./images/icons/main_icons.svg#my-courses_icon"></use>
+            <svg
+              class="sidebar__icon"
+              width="40"
+              height="40"
+            >
+              <use
+                href="./images/icons/main_icons.svg#my-courses_icon"
+              ></use>
             </svg>
             <a href="#" class="sidebar__link">Мои курсы</a>
           </li>
           <li class="sidebar__item">
-            <svg class="sidebar__icon" width="40" height="33">
-              <use href="./images/icons/main_icons.svg#my-mentors_icon"></use>
+            <svg
+              class="sidebar__icon"
+              width="40"
+              height="33"
+            >
+              <use
+                href="./images/icons/main_icons.svg#my-mentors_icon"
+              ></use>
             </svg>
-            <a href="#" class="sidebar__link">Мои ментора</a>
+            <a href="#" class="sidebar__link"
+              >Мои ментора</a
+            >
           </li>
           <li class="sidebar__item">
-            <svg class="sidebar__icon" width="40" height="30">
-              <use href="./images/icons/main_icons.svg#my-donates_icon"></use>
+            <svg
+              class="sidebar__icon"
+              width="40"
+              height="30"
+            >
+              <use
+                href="./images/icons/main_icons.svg#my-donates_icon"
+              ></use>
             </svg>
             <a href="#" class="sidebar__link">Мои донаты</a>
           </li>
           <li class="sidebar__item">
-            <svg class="sidebar__icon" width="40" height="40">
-              <use href="./images/icons/main_icons.svg#my-notes_icon"></use>
+            <svg
+              class="sidebar__icon"
+              width="40"
+              height="40"
+            >
+              <use
+                href="./images/icons/main_icons.svg#my-notes_icon"
+              ></use>
             </svg>
-            <a href="#" class="sidebar__link">Мои заметки</a>
+            <a href="#" class="sidebar__link"
+              >Мои заметки</a
+            >
           </li>
           <li class="sidebar__item">
-            <a href="#" class="sidebar__link">
-              <svg class="sidebar__icon" width="40" height="40">
-                <use href="./images/icons/main_icons.svg#qa_icon"></use>
-              </svg>
-              Вопрос-ответ</a
+            <svg
+              class="sidebar__icon"
+              width="40"
+              height="40"
+            >
+              <use
+                href="./images/icons/main_icons.svg#qa_icon"
+              ></use>
+            </svg>
+            <a href="#" class="sidebar__link"
+              >Вопрос-ответ</a
             >
           </li>
         </ul>
       </div>
       <div class="profile">
-        <div class="profile__title">
+        <div class="profile__container">
           <h2>Профиль</h2>
-
+          <button class="profile__edit-btn" type="button">
+            Редактировать
+            <svg
+              class="profile__edit-icon"
+              width="30"
+              height="30"
+            >
+              <use
+                href="./images/icons/main_icons.svg#edit_icon"
+              ></use>
+            </svg>
+          </button>
           <form class="form">
             <label for="login">Логин</label>
-            <input type="text" id="login" placeholder="Ватрушка" />
+            <input
+              class="form__input"
+              type="text"
+              id="login"
+              placeholder="Ватрушка"
+            />
             <label for="email">E-mail</label>
             <input
+              class="form__input"
               type="email"
               id="email"
               placeholder="vatrushka_pushka@gmail.com"
             />
             <label for="first-name">Имя</label>
-            <input type="text" id="first-name" placeholder="Екатерина" />
+            <input
+              class="form__input"
+              type="text"
+              id="first-name"
+              placeholder="Екатерина"
+            />
             <label for="last-name">Фамилия</label>
-            <input type="text" id="last-name" placeholder="Иванова" />
+            <input
+              class="form__input"
+              type="text"
+              id="last-name"
+              placeholder="Иванова"
+            />
             <label for="second-name">Отчество</label>
-            <input type="text" id="second-name" placeholder="Гульнаровна" />
+            <input
+              class="form__input"
+              type="text"
+              id="second-name"
+              placeholder="Гульнаровна"
+            />
             <label for="linkedin">Linkedin</label>
             <input
+              class="form__input web"
               type="text"
               id="linkedin"
               placeholder="https://www.linkedin.com"
             />
             <label for="youtube">YouTube</label>
             <input
+              class="form__input web"
               type="text"
               id="youtube"
               placeholder="https://www.youtube.com"
             />
             <label for="vk">VK</label>
-            <input type="text" id="vk" placeholder="https://vk.com" />
+            <input
+              class="form__input web"
+              type="text"
+              id="vk"
+              placeholder="https://vk.com"
+            />
           </form>
+          <div class="profile__media">
+            <button
+              class="profile__media-btn"
+              type="button"
+            >
+              Добавить социальную сеть
+            </button>
+          </div>
+          <button
+            class="profile__edit-pass-btn"
+            type="button"
+          >
+            Сменить пароль
+            <svg
+              class="profile__edit-icon"
+              width="30"
+              height="30"
+            >
+              <use
+                href="./images/icons/main_icons.svg#edit_icon"
+              ></use>
+            </svg>
+          </button>
           <button class="profile__delete-btn" type="button">
             Удалить профиль
+            <svg
+              class="profile__edit-icon"
+              width="30"
+              height="30"
+            >
+              <use
+                href="./images/icons/main_icons.svg#edit_icon"
+              ></use>
+            </svg>
           </button>
         </div>
-        <button class="profile__edit-btn" type="button">
-          Редактировать
-          <svg class="profile__edit-icon" width="30" height="30">
-            <use href="./images/icons/main_icons.svg#edit_icon"></use>
-          </svg>
-        </button>
+
         <div class="profile__avatar">
-          <div class="profile__image">
-            <img src="./images/profile@1x.jpg" alt="avatar" class="avatar" />
-            <button type="button">Сменить аватарку</button>
-          </div>
-          <div class="profile__image-modal visually-hidden">
-            Модалка для смены аватара (какая-то либа должна быть)
-          </div>
-          <div class="profile__media">
-            <button type="button">Добавить социальную сеть</button>
-          </div>
-          <button class="profile__edit-pass-btn" type="button">
-            Сменить пароль
+          <img
+            src="./images/profile@2x.jpg"
+            alt="avatar"
+            class="profile__image"
+          />
+          <button type="button">
+            Сменить аватарку
+            <svg
+              class="profile__edit-icon"
+              width="30"
+              height="30"
+            >
+              <use
+                href="./images/icons/main_icons.svg#edit_icon"
+              ></use>
+            </svg>
           </button>
+          <div class="profile__image-modal visually-hidden">
+            Модалка для смены аватара (какая-то бибилиотека
+            должна быть)
+          </div>
         </div>
       </div>
     </main>

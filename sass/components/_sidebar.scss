@@ -2,19 +2,19 @@
 .sidebar {
   background: $accent-color;
   width: 376px;
-  padding: 109px 0px 36px 28px;
+  padding: 109px 0px 36px;
   height: 652px;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
 }
 
 .sidebar__item {
-  width: 100%;
+  display: flex;
+  align-items: center;
+  max-width: 376px;
+  height: 78px;
+  padding-left: 28px;
   cursor: pointer;
-}
-
-.sidebar__item:not(:last-child) {
-  margin-bottom: 39px;
 }
 
 .sidebar__link {
@@ -23,7 +23,6 @@
   font-size: 24px;
   line-height: 0.1.25;
   color: $sidebar-text-color;
-  // padding: 26px 0 14px 83px;
 }
 
 .sidebar__icon {
@@ -33,6 +32,8 @@
   margin-right: 18px;
 }
 
+.sidebar__item:hover,
+.sidebar__item:focus,
 .sidebar__item:hover .sidebar__link,
 .sidebar__item:focus .sidebar__link,
 .sidebar__item:hover .sidebar__icon,
